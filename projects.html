@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yohanes Alemu – All Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3498db;
+            --dark: #2c3e50;
+            --light: #f8f9fa;
+            --gray: #7f8c8d;
+            --accent: #e74c3c;
+        }
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+        body{background:var(--light);color:var(--dark);line-height:1.6}
+        a{text-decoration:none;color:inherit}
+        .container{max-width:1200px;margin:auto;padding:40px 20px}
+        h1{text-align:center;margin-bottom:10px;font-size:2.8rem}
+        .subtitle{text-align:center;margin-bottom:50px;font-size:1.2rem;color:var(--gray)}
+        .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:30px}
+        .card{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.08);transition:transform .3s}
+        .card:hover{transform:translateY(-10px)}
+        .card img{width:100%;height:220px;object-fit:cover}
+        .card-body{padding:25px}
+        .card-body h3{font-size:1.4rem;margin-bottom:12px}
+        .card-body p{color:var(--gray);margin-bottom:20px;font-size:.95rem}
+        .tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+        .tag{background:rgba(52,152,219,.12);color:var(--primary);padding:4px 12px;border-radius:50px;font-size:.8rem}
+        .btn{background:var(--primary);color:#fff;padding:10px 20px;border-radius:50px;font-weight:600;display:inline-block}
+        .btn:hover{background:#2980b9}
+        .back-home{display:inline-flex;align-items:center;gap:8px;margin-bottom:30px;font-weight:500}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="back-home" href="index.html"><i class="fa-solid fa-arrow-left-long"></i> Back to Home</a>
+        <h1>All Projects</h1>
+        <p class="subtitle">Explore everything I have built so far</p>
+
+        <div class="projects-grid">
+            <!-- 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=60" alt="House Rental">
+                <div class="card-body">
+                    <h3>House Rental Management System</h3>
+                    <p>End-to-end cloud solution that automates property listing, tenant application, digital contract signing and mobile-money rent collection for Hawassa City Administration.</p>
+                    <div class="tags">
+                        <span class="tag">PHP</span><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">React</span><span class="tag">AWS</span>
+                    </div>
+                    <a class="btn" target="_blank" href="https://github.com/yohanesalemu/hawassa-rentals">View Code</a>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=60" alt="Chatbot">
+                <div class="card-body">
+                    <h3>AI Customer-Support Chatbot</h3>
+                    <p>Context-aware bot that uses BERT for intent classification, supports Amharic/English, and reduces support tickets by 68 % for an e-commerce client.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">TensorFlow</span><span class="tag">Redis</span><span class="tag">Docker</span>
+                    </div>
+                    <a class="btn" target="_blank" href="https://github.com/yohanesalemu/ai-support-bot">View Code</a>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=60" alt="EdGame">
+                <div class="card-body">
+                    <h3>STEM Educational Game Platform</h3>
+                    <p>Multiplayer Unity games synced to a React web dashboard; teachers track learner progress in real time via MongoDB analytics.</p>
+                    <div class="tags">
+                        <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Socket.io</span>
+                    </div>
+                    <a class="btn" target="_blank" href="https://github.com/yohanesalemu/stem-games">View Code</a>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=800&q=60" alt="POS">
+                <div class="card-body">
+                    <h3>Secure Retail POS</h3>
+                    <p>PCI-compliant POS with end-to-end encryption, offline capability, and stock prediction using simple linear regression.</p>
+                    <div class="tags">
+                        <span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">PostgreSQL</span><span class="tag">Python</span><span class="tag">Stripe</span>
+                    </div>
+                    <a class="btn" target="_blank" href="https://github.com/yohanesalemu/secure-pos">View Code</a>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=60" alt="ThreatIntel">
+                <div class="card-body">
+                    <h3>Real-Time Threat-Intel Pipeline</h3>
+                    <p>Ingests 1 M+ IoC/day from 30 feeds, deduplicates with Redis Bloom, scores and pushes to MISP in <200 ms average latency.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span><span class="tag">Kafka</span><span class="tag">DynamoDB</span><span class="tag">Lambda</span><span class="tag">Terraform</span>
+                    </div>
+                    <a class="btn" target="_blank" href="https://github.com/yohanesalemu/threat-pipe">View Code</a>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=60" alt="FarmIoT">
+                <div class="card-body">
+                    <h3>IoT Farm-Monitoring System</h3>
+                    <p>ESP32 sensors stream soil & weather data to AWS IoT Core; Lambda triggers irrigation actuators via MQTT, saving 30 % water usage.</p>
+                    <div class="tags">
+                        <span class="tag">C++</span><span class="tag">AWS IoT</span><span class="tag">React</span><span class="tag">Chart.js</span><span class="tag">Serverless</span>
+                    </div>
+                    <a class="btn" target="_blank" href="https://github.com/yohanesalemu/farm-iot">View Code</a>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1559523182-a284c3fb7cff?auto=format&fit=crop&w=800&q=60" alt="Portfolio">
+                <div class="card-body">
+                    <h3>Interactive Portfolio Website</h3>
+                    <p>Responsive single-page application with dark-mode, on-scroll animations, and a PDF auto-generator for CV download (the very site you are on).</p>
+                    <div class="tags">
+                        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Vanilla JS</span><span class="tag">Marked.js</span><span class="tag">jspdf</span>
+                    </div>
+                    <a class="btn" target="_blank" href="https://github.com/yohanesalemu/portfolio-v2">View Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Markdown parser & PDF generator -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script>
+/* ----------  CV Download ---------- */
+document.getElementById('download-cv').addEventListener('click', async () => {
+    // 1. fetch Markdown
+    const md = await fetch('cv-yohanes-alemu.md').then(r => r.text());
+
+    // 2. convert to HTML
+    const html = marked.parse(md);
+
+    // 3. create a hidden iframe to print
+    const iframe = document.createElement('iframe');
+    iframe.style.position = 'fixed'; iframe.style.right = '-9999px'; iframe.style.bottom = '-9999px';
+    document.body.appendChild(iframe);
+
+    const doc = iframe.contentDocument || iframe.contentWindow.document;
+    doc.open();
+    doc.write(`
+        <html>
+        <head>
+          <meta charset="utf-8">
+          <title>Yohanes Alemu – CV</title>
+          <style>
+            body{font-family:'Poppins',sans-serif;margin:40px;color:#333;line-height:1.6}
+            h1{font-size:2.2rem;margin-bottom:4px}h2{font-size:1.4rem;margin-top:24px;border-bottom:2px solid #3498db;padding-bottom:4px}
+            p{margin:4px 0}ul{margin:6px 0 6px 18px}
+            @media print{body{margin:20px}}
+          </style>
+        </head>
+        <body>${html}</body>
+        </html>
+    `);
+    doc.close();
+
+    // 4. trigger browser print → choose “Save as PDF”
+    iframe.contentWindow.focus();
+    iframe.contentWindow.print();
+
+    // 5. cleanup after print dialog closes
+    setTimeout(() => iframe.remove(), 1000);
+});
+</script>
+</body>
+</html>
